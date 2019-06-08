@@ -10,19 +10,31 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Hello Swift UI")
-                .font(.title)
-                .color(.blue)
-                HStack {
-                    Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
-                        .font(.subheadline)
+        VStack {
+            MapView()
+                .frame(height: 300)
+
+            CircleImage()
+                .offset(y: -110)
+                .padding(.bottom, -110)
+
+            VStack(alignment: .leading) {
+                Text("Turtle Rock")
+                    .font(.title)
+                    .color(.blue)
+
+                    HStack {
+                        Text("Placeholder")
+                            .font(.subheadline)
+                            Spacer()
+                            Text("Android Enginer")
+                                .font(.subheadline)
+                        }
+                    }
+                    .padding()
+
                     Spacer()
-                    Text("Android Enginer")
-                    .font(.subheadline)
-                }
-        }
-        .padding()
+            }
     }
 }
 
