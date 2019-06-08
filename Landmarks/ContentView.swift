@@ -10,7 +10,19 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
-        Text("Hello World")
+        VStack(alignment: .leading) {
+            Text("Hello Swift UI")
+                .font(.title)
+                .color(.blue)
+                HStack {
+                    Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
+                        .font(.subheadline)
+                    Spacer()
+                    Text("Android Enginer")
+                    .font(.subheadline)
+                }
+        }
+        .padding()
     }
 }
 
